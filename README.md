@@ -1,4 +1,4 @@
-# 3D Animated Character
+# 3D Animated Character in Unity/Blender
 
 Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
@@ -54,6 +54,10 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 - Texture the low poly model while using the normal map.
 
+![Picture](./docs/10.jpg)
+
 ### Import into Unity
 
 - Import in Unity as FBX, without calculating smoothness for normals, just import the normals interpolation from the fbx.
+
+![Picture](./docs/11.jpg)
