@@ -64,3 +64,5 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 ![Picture](./docs/11.jpg)
 
 - Setup a scene with a skybox and tweak the lighting to emulate the looks from Blender.
+
+![Picture](./docs/12.jpg)
