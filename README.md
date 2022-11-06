@@ -9,6 +9,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Baking Normals Low/High Poly](https://www.reddit.com/r/learnblender/comments/gbgvla/does_having_the_high_poly_object_being_completely/)
 - [Blender/Unity Smooth Shading Compatibility](https://www.reddit.com/r/Unity3D/comments/47lska/just_found_out_that_blenders_smooth_shading_will/)
 - [3D Scifi Kit Starter Kit](https://assetstore.unity.com/packages/3d/environments/3d-scifi-kit-starter-kit-92152)
+- [Ambient Occlusion in Blender](https://docs.blender.org/manual/en/2.79/render/blender_render/world/ambient_occlusion.html)
 
 ## Implementation
 
@@ -61,3 +62,5 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - Import in Unity as FBX, without calculating smoothness for normals, just import the normals interpolation from the fbx.
 
 ![Picture](./docs/11.jpg)
+
+- Setup a scene with a skybox and tweak the lighting to emulate the looks from Blender.
