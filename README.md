@@ -21,17 +21,34 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - Model a low poly version.
 
 ![Picture](./docs/2.jpg)
+![Picture](./docs/3.jpg)
 
 - Subdivide and add more details, to generate a high resolution version.
-- UV Map the high resolution version.
+
+![Picture](./docs/4.jpg)
+
+- UV Map the high resolution version using Seams.
+
+![Picture](./docs/5.jpg)
+
 - Decimate to get a low poly again, with aligned UVs.
+
+![Picture](./docs/6.jpg)
+
 - Use Subdivision Catmul-Clark to get an Ultra HD to bake normals.
+
+![Picture](./docs/7.jpg)
 
 ### Normal Mapping
 
 - Set Smooth Shading to both the low poly and high poly models.
 - Modify the models as needed to minimize meshes being too close together (like shoulders).
+
+![Picture](./docs/8.jpg)
+
 - Be sure both models are superposed, bake the normals making sure the extrusion is set to minimum, and the max ray distance is 0.
+
+![Picture](./docs/9.jpg)
 
 ### Texturing
 
