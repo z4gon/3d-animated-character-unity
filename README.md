@@ -70,3 +70,15 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - Setup an emissive texture for the glowing parts of the suit.
 
 ![Picture](./docs/13.jpg)
+
+### Rigging
+
+- Create an Armature, starting from the base of the spine.
+- Use Subdivision to split a bone in two connected bones.
+- Use extrusion to grow a branch bone.
+- Parent bones with offset to make them nested but not connected.
+- Name bones `Leg.L` to be able to use `Symmetrize` to obtain a mirrored `Leg.R` across the X axis.
+- Turn on `X Axis Mirror` to be able to work with both sides of the bones at the same time.
+
+![Picture](./docs/14.jpg)
+![Picture](./docs/15.jpg)
