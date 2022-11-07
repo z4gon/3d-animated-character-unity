@@ -2,6 +2,8 @@
 
 Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
+## Screenshots
+
 ### References
 
 - [How To Make A 3D Character For Your Game](https://www.youtube.com/watch?v=ogz-3r0EHKM)
@@ -11,6 +13,17 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [3D Scifi Kit Starter Kit](https://assetstore.unity.com/packages/3d/environments/3d-scifi-kit-starter-kit-92152)
 - [Ambient Occlusion in Blender](https://docs.blender.org/manual/en/2.79/render/blender_render/world/ambient_occlusion.html)
 - [Adding Vertices to Vertex Groups](https://blender.stackexchange.com/questions/183463/how-do-i-fix-vertices-that-arent-following-the-armature)
+
+## Table of Content
+
+- [3D Modelling](#3d-modelling)
+- [Normal Mapping](#normal-mapping)
+- [Texturing](#texturing)
+- [Importing model into Unity](#importing-model-into-unity)
+- [Rigging](#rigging)
+- [Animation](#animation)
+- [Importing animations into Unity](#importing-animations-into-unity)
+- [3rd Person Character Controller](#3d-person-character-controller)
 
 ## Implementation
 
@@ -58,7 +71,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ![Picture](./docs/10.jpg)
 
-### Import into Unity
+### Importing model into Unity
 
 - Import in Unity as FBX, without calculating smoothness for normals, just import the normals interpolation from the fbx.
 
