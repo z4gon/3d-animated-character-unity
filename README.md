@@ -82,3 +82,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ![Picture](./docs/14.jpg)
 ![Picture](./docs/15.jpg)
+
+- Use the Weight Paint tool to define the influence of the bones on the vertices.
+
+![Picture](./docs/16.jpg)
