@@ -105,3 +105,15 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - Make all vertices belong to at least one vertex group, otherwise they will ignore the armature movement.
 
 ![Picture](./docs/17.jpg)
+
+- Separate the shoulders bones for better control of the animation.
+
+![Picture](./docs/18.jpg)
+
+### Animation
+
+- Place keyframes for the bones in the armature.
+- Use the record function to record new movements for the bones.
+- The graph editor allows to control the easing of the animation.
+
+![Picture](./docs/19.jpg)
