@@ -13,6 +13,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [3D Scifi Kit Starter Kit](https://assetstore.unity.com/packages/3d/environments/3d-scifi-kit-starter-kit-92152)
 - [Ambient Occlusion in Blender](https://docs.blender.org/manual/en/2.79/render/blender_render/world/ambient_occlusion.html)
 - [Adding Vertices to Vertex Groups](https://blender.stackexchange.com/questions/183463/how-do-i-fix-vertices-that-arent-following-the-armature)
+- [Inverse Kinematics - Blender 2.80 Fundamentals](https://www.youtube.com/watch?v=S-2v_CKmVE8)
 
 ## Table of Content
 
