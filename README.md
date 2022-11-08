@@ -23,6 +23,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Importing model into Unity](#importing-model-into-unity)
 - [Rigging](#rigging)
 - [Animation](#animation)
+- [Inverse Kinematics](#inverse-kinematics)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
 
@@ -118,3 +119,11 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - The graph editor allows to control the easing of the animation.
 
 ![Picture](./docs/19.jpg)
+
+### Inverse Kinematics
+
+- Add anchor bones to setup the Inverse Kinematics for the feet and hands.
+- Add the bone constraint for inverse kinematics, pointing to these bones.
+- Use IK for simplifying the complex movements in the animations.
+
+![Picture](./docs/20.jpg)
