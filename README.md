@@ -25,6 +25,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Inverse Kinematics](#inverse-kinematics)
 - [Animation](#animation)
   - [Idle Animation](#idle-animation)
+  - [Walking Animation](#walking-animation)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
 
@@ -134,6 +135,12 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - A slow animation showing the character while idle, it includes a weigh shift between the legs, and the head looking towards the distance.
 
 ![Picture](./docs/21.jpg)
+
+#### Walking Animation
+
+- A full walking cycle, with torso movement included.
+
+![Picture](./docs/24.jpg)
 
 ### Importing Animations into Unity
 
