@@ -22,8 +22,9 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Texturing](#texturing)
 - [Importing model into Unity](#importing-model-into-unity)
 - [Rigging](#rigging)
-- [Animation](#animation)
 - [Inverse Kinematics](#inverse-kinematics)
+- [Animation](#animation)
+  - [Idle Animation](#idle-animation)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
 
@@ -112,6 +113,14 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ![Picture](./docs/18.jpg)
 
+### Inverse Kinematics
+
+- Add anchor bones to setup the Inverse Kinematics for the feet and hands.
+- Add the bone constraint for inverse kinematics, pointing to these bones.
+- Use IK for simplifying the complex movements in the animations.
+
+![Picture](./docs/20.jpg)
+
 ### Animation
 
 - Place keyframes for the bones in the armature.
@@ -120,10 +129,8 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ![Picture](./docs/19.jpg)
 
-### Inverse Kinematics
+#### Idle Animation
 
-- Add anchor bones to setup the Inverse Kinematics for the feet and hands.
-- Add the bone constraint for inverse kinematics, pointing to these bones.
-- Use IK for simplifying the complex movements in the animations.
+- A slow animation showing the character while idle, it includes a weigh shift between the legs, and the head looking towards the distance.
 
-![Picture](./docs/20.jpg)
+![Picture](./docs/21.jpg)
