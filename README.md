@@ -134,3 +134,12 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - A slow animation showing the character while idle, it includes a weigh shift between the legs, and the head looking towards the distance.
 
 ![Picture](./docs/21.jpg)
+
+### Importing Animations into Unity
+
+- Select the armature and its children objects in Blender, and export as fbx.
+- In Unity, go to the Animations Tab and cut out the animations needed.
+- Setup an animation controller to apply the animation.
+
+![Picture](./docs/23.jpg)
+![Picture](./docs/22.jpg)
