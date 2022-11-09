@@ -156,6 +156,14 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ![Picture](./docs/26.jpg)
 
+#### Fighting Stance Animation
+
+- Used to transition after finishing an attack, to avoid going to the idle animation directly.
+- After finishing an attack, if a certain amount of time passes without performing any other attack, the character will transition to the idle animation.
+- Walking and running also trigger this fighting stance state.
+
+![Picture](./docs/27.jpg)
+
 ### Importing Animations into Unity
 
 - Select the armature and its children objects in Blender, and export as fbx.
