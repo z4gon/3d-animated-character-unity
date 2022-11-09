@@ -26,6 +26,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Animation](#animation)
   - [Idle Animation](#idle-animation)
   - [Walking Animation](#walking-animation)
+  - [Running Animation](#running-animation)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
 
@@ -141,6 +142,12 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - A full walking cycle, with torso movement included.
 
 ![Picture](./docs/24.jpg)
+
+#### Running Animation
+
+- A full running cycle, with torso movement included.
+
+![Picture](./docs/25.jpg)
 
 ### Importing Animations into Unity
 
