@@ -171,4 +171,4 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - Setup an animation controller to apply the animation.
 
 ![Picture](./docs/23.jpg)
-![Picture](./docs/22.jpg)
+![Picture](./docs/28.jpg)
