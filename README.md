@@ -27,6 +27,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
   - [Idle Animation](#idle-animation)
   - [Walking Animation](#walking-animation)
   - [Running Animation](#running-animation)
+  - [Fight Combo Animation](#fight-combo-animation)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
 
@@ -148,6 +149,12 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - A full running cycle, with torso movement included.
 
 ![Picture](./docs/25.jpg)
+
+#### Fight Combo Animation
+
+- A full martial arts combo with fist punches, uppercut, and leg movements.
+
+![Picture](./docs/26.jpg)
 
 ### Importing Animations into Unity
 
