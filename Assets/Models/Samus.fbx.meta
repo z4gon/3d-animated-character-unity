@@ -69,7 +69,7 @@ ModelImporter:
       takeName: Armature|ArmatureAction
       internalID: 0
       firstFrame: 2
-      lastFrame: 300
+      lastFrame: 301
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -77,7 +77,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -97,8 +97,8 @@ ModelImporter:
       name: Walk
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 301
-      lastFrame: 329
+      firstFrame: 304
+      lastFrame: 333
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -126,8 +126,8 @@ ModelImporter:
       name: Run
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 331
-      lastFrame: 350
+      firstFrame: 336
+      lastFrame: 355
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -155,8 +155,8 @@ ModelImporter:
       name: AttackFist
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 351
-      lastFrame: 368
+      firstFrame: 358
+      lastFrame: 374
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -184,8 +184,8 @@ ModelImporter:
       name: AttackUpperCut
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 364
-      lastFrame: 381
+      firstFrame: 371
+      lastFrame: 388
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -213,8 +213,8 @@ ModelImporter:
       name: AttackLegDown
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 377
-      lastFrame: 407
+      firstFrame: 386
+      lastFrame: 412
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -242,8 +242,8 @@ ModelImporter:
       name: AttackLegUp
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 405
-      lastFrame: 440
+      firstFrame: 412
+      lastFrame: 447
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -271,8 +271,8 @@ ModelImporter:
       name: AttackCombo
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 351
-      lastFrame: 440
+      firstFrame: 358
+      lastFrame: 447
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -300,8 +300,8 @@ ModelImporter:
       name: IdleFight
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 441
-      lastFrame: 500
+      firstFrame: 450
+      lastFrame: 509
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

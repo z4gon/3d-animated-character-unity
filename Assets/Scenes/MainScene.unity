@@ -210,9 +210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.5, z: 0.3}
   ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
-  VerticalArmLength: 0.4
+  VerticalArmLength: -0.26
   CameraSide: 0.555
-  CameraDistance: 5.14
+  CameraDistance: 3.69
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685532801}
   m_LocalRotation: {x: 2.9007704e-15, y: -0.7071067, z: 2.9007694e-15, w: 0.7071068}
-  m_LocalPosition: {x: 10.89, y: 2.37, z: 0.054999083}
+  m_LocalPosition: {x: 9.440001, y: 1.7099999, z: 0.054999344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -557,7 +557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: -0.7071067, z: 0, w: 0.70710695}
-  m_LocalPosition: {x: 10.89, y: 2.37, z: 0.054999083}
+  m_LocalPosition: {x: 9.440001, y: 1.7099999, z: 0.054999344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 2
-  SprintSpeed: 10.335
+  SprintSpeed: 12.335
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   LandingAudioClip: {fileID: 0}
