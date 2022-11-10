@@ -220,11 +220,6 @@ MonoBehaviour:
   CameraRadius: 0.2
   DampingIntoCollision: 0
   DampingFromCollision: 2
---- !u!4 &316821100 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8879528566716807029, guid: 44b855b7a5789470b8a8add05eb57642, type: 3}
-  m_PrefabInstance: {fileID: 1574117454}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &417533126
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +312,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557388453
 GameObject:
@@ -411,7 +406,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685532801
 GameObject:
@@ -788,13 +783,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492428536}
-  m_LocalRotation: {x: -0.97659755, y: 0.21010336, z: 0.01778467, w: -0.042397648}
-  m_LocalPosition: {x: 0.05920118, y: -0.073146574, z: 0.031466518}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.009999999}
+  m_LocalRotation: {x: 0.6390318, y: 0.22414161, z: -0.21562992, w: 0.70349324}
+  m_LocalPosition: {x: 9.2699995, y: 3.0699992, z: -1.4500006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 316821100}
-  m_RootOrder: 5
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 84.73, y: 25.659, z: -10.615}
 --- !u!1001 &1574117454
 PrefabInstance:
@@ -825,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44b855b7a5789470b8a8add05eb57642, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44b855b7a5789470b8a8add05eb57642, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1307,7 +1302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 1
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
