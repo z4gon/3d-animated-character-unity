@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -59,8 +60,10 @@ namespace StarterAssets
         // animation IDs
         private int _animIDSpeed;
         private int _animIDMotionSpeed;
-        private int _animIDAtEase;
-        private int _animIDMove;
+        private int _animIDIsAtEase;
+
+        private Coroutine _atEaseCoroutine;
+        private bool _isAtEase = true;
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
         private PlayerInput _playerInput;
@@ -117,6 +120,7 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
 
             Move();
+            CheckAtEase();
         }
 
         private void LateUpdate()
@@ -128,6 +132,7 @@ namespace StarterAssets
         {
             _animIDSpeed = Animator.StringToHash("Speed");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+            _animIDIsAtEase = Animator.StringToHash("IsAtEase");
         }
 
         private void CameraRotation()
@@ -223,6 +228,35 @@ namespace StarterAssets
             if (lfAngle < -360f) lfAngle += 360f;
             if (lfAngle > 360f) lfAngle -= 360f;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
+        }
+
+        private void CheckAtEase()
+        {
+            bool isMoving = _animationBlend > 0;
+            bool hasActiveCoroutine = _atEaseCoroutine != null;
+
+            if (isMoving && _isAtEase)
+            {
+                _isAtEase = false;
+                _animator.SetBool(_animIDIsAtEase, _isAtEase);
+
+                if (hasActiveCoroutine)
+                {
+                    StopCoroutine(_atEaseCoroutine);
+                    _atEaseCoroutine = null;
+                }
+            }
+            else if (!isMoving && !_isAtEase && !hasActiveCoroutine)
+            {
+                _atEaseCoroutine = StartCoroutine(SetAtEase(3));
+            }
+        }
+
+        private IEnumerator SetAtEase(float afterSeconds)
+        {
+            yield return new WaitForSeconds(afterSeconds);
+            _isAtEase = true;
+            _animator.SetBool(_animIDIsAtEase, _isAtEase);
         }
     }
 }
