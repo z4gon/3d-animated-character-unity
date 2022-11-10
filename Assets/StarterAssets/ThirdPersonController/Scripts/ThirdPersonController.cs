@@ -56,11 +56,13 @@ namespace StarterAssets
         private float _animationBlend;
         private float _targetRotation = 0.0f;
         private float _rotationVelocity;
+        private int _nextMeleeAttackIdx = 0;
 
         // animation IDs
         private int _animIDSpeed;
         private int _animIDMotionSpeed;
         private int _animIDIsAtEase;
+        private int[] _animIDMeleeAttacks;
 
         private Coroutine _atEaseCoroutine;
         private bool _isAtEase = true;
@@ -121,6 +123,7 @@ namespace StarterAssets
 
             Move();
             CheckAtEase();
+            MeleeAttack();
         }
 
         private void LateUpdate()
@@ -133,6 +136,12 @@ namespace StarterAssets
             _animIDSpeed = Animator.StringToHash("Speed");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
             _animIDIsAtEase = Animator.StringToHash("IsAtEase");
+            _animIDMeleeAttacks = new int[]{
+                Animator.StringToHash("MeleeAttack1"),
+                Animator.StringToHash("MeleeAttack2"),
+                Animator.StringToHash("MeleeAttack3"),
+                Animator.StringToHash("MeleeAttack4"),
+            };
         }
 
         private void CameraRotation()
@@ -237,14 +246,7 @@ namespace StarterAssets
 
             if (isMoving && _isAtEase)
             {
-                _isAtEase = false;
-                _animator.SetBool(_animIDIsAtEase, _isAtEase);
-
-                if (hasActiveCoroutine)
-                {
-                    StopCoroutine(_atEaseCoroutine);
-                    _atEaseCoroutine = null;
-                }
+                ExitAtEase();
             }
             else if (!isMoving && !_isAtEase && !hasActiveCoroutine)
             {
@@ -257,6 +259,38 @@ namespace StarterAssets
             yield return new WaitForSeconds(afterSeconds);
             _isAtEase = true;
             _animator.SetBool(_animIDIsAtEase, _isAtEase);
+        }
+
+        private void ExitAtEase()
+        {
+            bool hasActiveCoroutine = _atEaseCoroutine != null;
+
+            _isAtEase = false;
+            _animator.SetBool(_animIDIsAtEase, _isAtEase);
+
+            if (hasActiveCoroutine)
+            {
+                StopCoroutine(_atEaseCoroutine);
+                _atEaseCoroutine = null;
+            }
+        }
+
+        private void MeleeAttack()
+        {
+            if (_input.meleeAttack)
+            {
+                _animator.SetTrigger(_animIDMeleeAttacks[_nextMeleeAttackIdx]);
+                Debug.Log("SetTrigger(_animIDMeleeAttacks[_nextMeleeAttackIdx])");
+                _nextMeleeAttackIdx = (_nextMeleeAttackIdx + 1) % _animIDMeleeAttacks.Length;
+                ExitAtEase();
+                _input.meleeAttack = false;
+            }
+        }
+
+        public void OnMeleeAttackFinished()
+        {
+            _nextMeleeAttackIdx = 0;
+            // _atEaseCoroutine = StartCoroutine(SetAtEase(3));
         }
     }
 }
