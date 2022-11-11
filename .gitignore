@@ -73,3 +73,5 @@ crashlytics-build.properties
 
 .DS_Store
 .vscode
+
+*.blend1
