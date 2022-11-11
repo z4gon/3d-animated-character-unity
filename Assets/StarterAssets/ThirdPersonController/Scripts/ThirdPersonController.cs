@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cinemachine;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
@@ -74,6 +75,7 @@ namespace StarterAssets
         private CharacterController _controller;
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
+        private CinemachineImpulseSource _impulseSource;
 
         private const float _threshold = 0.01f;
 
@@ -108,6 +110,7 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+            _impulseSource = GetComponent<CinemachineImpulseSource>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
             _playerInput = GetComponent<PlayerInput>();
 #else
@@ -280,11 +283,17 @@ namespace StarterAssets
             if (_input.meleeAttack)
             {
                 _animator.SetTrigger(_animIDMeleeAttacks[_nextMeleeAttackIdx]);
-                Debug.Log("SetTrigger(_animIDMeleeAttacks[_nextMeleeAttackIdx])");
                 _nextMeleeAttackIdx = (_nextMeleeAttackIdx + 1) % _animIDMeleeAttacks.Length;
+                _input.meleeAttack = false; // only react when first pressed
+
+
                 ExitAtEase();
-                _input.meleeAttack = false;
             }
+        }
+
+        public void OnMeleeAttackLanded()
+        {
+            _impulseSource.GenerateImpulse();
         }
 
         public void OnMeleeAttackFinished()

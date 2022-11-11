@@ -4,7 +4,9 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 ## Screenshots
 
-### References
+![Picture](./docs/34.jpg)
+
+### Resources
 
 - [How To Make A 3D Character For Your Game](https://www.youtube.com/watch?v=ogz-3r0EHKM)
 - [Baking a Normal Map](https://www.youtube.com/watch?v=tndUB5b4STI)
@@ -14,6 +16,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 - [Ambient Occlusion in Blender](https://docs.blender.org/manual/en/2.79/render/blender_render/world/ambient_occlusion.html)
 - [Adding Vertices to Vertex Groups](https://blender.stackexchange.com/questions/183463/how-do-i-fix-vertices-that-arent-following-the-armature)
 - [Inverse Kinematics - Blender 2.80 Fundamentals](https://www.youtube.com/watch?v=S-2v_CKmVE8)
+- [Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)
 - [Unity Input System](https://forum.unity.com/threads/new-input-system-triggers-action-on-press-and-release.1161764/)
 
 ## Table of Content
@@ -31,6 +34,9 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
   - [Fight Combo Animation](#fight-combo-animation)
 - [Importing animations into Unity](#importing-animations-into-unity)
 - [3rd Person Character Controller](#3d-person-character-controller)
+  - [Input System](#input-system)
+  - [Animatior Controller](#animator-controller)
+  - [Cinemachine Impulse](#cinemachine-impulse)
 
 ## Implementation
 
@@ -169,7 +175,31 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 
 - Select the armature and its children objects in Blender, and export as fbx.
 - In Unity, go to the Animations Tab and cut out the animations needed.
-- Setup an animation controller to apply the animation.
+- Setup an animatior controller to apply the animation.
 
 ![Picture](./docs/23.jpg)
 ![Picture](./docs/28.jpg)
+
+- Setup animation events.
+
+![Picture](./docs/29.jpg)
+
+### 3rd Person Character Controller
+
+- Use the Third Person Character controller asset.
+
+![Picture](./docs/30.jpg)
+
+#### Input System
+
+- Expand the input asset to allow melee attacks.
+
+![Picture](./docs/31.jpg)
+
+#### Animator Controller
+
+- Expand the animator controller to include the melee attacks and chained attacks.
+- Use a blend tree for the idle, walk and run animations.
+
+![Picture](./docs/32.jpg)
+![Picture](./docs/33.jpg)
