@@ -5,6 +5,7 @@ Modelled, Textured and Animated in Blender, later setup in **Unity 2021.3.10f1**
 ## Screenshots
 
 ![Picture](./docs/34.jpg)
+https://user-images.githubusercontent.com/4588601/201392560-d2024bc5-92d3-4c6b-83dd-fb0f7a5fbde9.mp4
 
 ### Resources
 
