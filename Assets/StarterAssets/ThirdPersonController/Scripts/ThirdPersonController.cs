@@ -64,6 +64,7 @@ namespace StarterAssets
         private int _animIDMotionSpeed;
         private int _animIDIsAtEase;
         private int[] _animIDMeleeAttacks;
+        private int _animIDLevelUp;
 
         private Coroutine _atEaseCoroutine;
         private bool _isAtEase = true;
@@ -127,6 +128,7 @@ namespace StarterAssets
             Move();
             CheckAtEase();
             MeleeAttack();
+            LevelUp();
         }
 
         private void LateUpdate()
@@ -145,6 +147,7 @@ namespace StarterAssets
                 Animator.StringToHash("MeleeAttack3"),
                 Animator.StringToHash("MeleeAttack4"),
             };
+            _animIDLevelUp = Animator.StringToHash("LevelUp");
         }
 
         private void CameraRotation()
@@ -300,6 +303,17 @@ namespace StarterAssets
         {
             _nextMeleeAttackIdx = 0;
             // _atEaseCoroutine = StartCoroutine(SetAtEase(3));
+        }
+
+        private void LevelUp()
+        {
+            if (_input.levelUp)
+            {
+                _animator.SetTrigger(_animIDLevelUp);
+                _input.levelUp = false;
+
+                ExitAtEase();
+            }
         }
     }
 }

@@ -23,22 +23,28 @@ https://user-images.githubusercontent.com/4588601/201392755-649174f8-b860-4351-8
 
 ## Table of Content
 
-- [3D Modelling](#3d-modelling)
-- [Normal Mapping](#normal-mapping)
-- [Texturing](#texturing)
-- [Importing model into Unity](#importing-model-into-unity)
-- [Rigging](#rigging)
-- [Inverse Kinematics](#inverse-kinematics)
-- [Animation](#animation)
-  - [Idle Animation](#idle-animation)
-  - [Walking Animation](#walking-animation)
-  - [Running Animation](#running-animation)
-  - [Fight Combo Animation](#fight-combo-animation)
-- [Importing animations into Unity](#importing-animations-into-unity)
-- [3rd Person Character Controller](#3d-person-character-controller)
-  - [Input System](#input-system)
-  - [Animatior Controller](#animator-controller)
-  - [Cinemachine Impulse](#cinemachine-impulse)
+- [3D Animated Character in Unity/Blender](#3d-animated-character-in-unityblender)
+  - [Screenshots](#screenshots)
+    - [Resources](#resources)
+  - [Table of Content](#table-of-content)
+  - [Implementation](#implementation)
+    - [3D Modelling](#3d-modelling)
+    - [Normal Mapping](#normal-mapping)
+    - [Texturing](#texturing)
+    - [Importing model into Unity](#importing-model-into-unity)
+    - [Rigging](#rigging)
+    - [Inverse Kinematics](#inverse-kinematics)
+    - [Animation](#animation)
+      - [Idle Animation](#idle-animation)
+      - [Walking Animation](#walking-animation)
+      - [Running Animation](#running-animation)
+      - [Fight Combo Animation](#fight-combo-animation)
+      - [Level Up Animation](#level-up-animation)
+      - [Fighting Stance Animation](#fighting-stance-animation)
+    - [Importing Animations into Unity](#importing-animations-into-unity)
+    - [3rd Person Character Controller](#3rd-person-character-controller)
+      - [Input System](#input-system)
+      - [Animator Controller](#animator-controller)
 
 ## Implementation
 
@@ -164,6 +170,12 @@ https://user-images.githubusercontent.com/4588601/201392755-649174f8-b860-4351-8
 - A full martial arts combo with fist punches, uppercut, and leg movements.
 
 ![Picture](./docs/26.jpg)
+
+#### Level Up Animation
+
+- Levitation animation for level ups.
+
+![Picture](./docs/35.jpg)
 
 #### Fighting Stance Animation
 

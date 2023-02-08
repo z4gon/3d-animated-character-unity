@@ -13,6 +13,7 @@ namespace StarterAssets
         public bool jump;
         public bool sprint;
         public bool meleeAttack;
+        public bool levelUp;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -49,6 +50,11 @@ namespace StarterAssets
         {
             MeleeAttackInput(value.isPressed);
         }
+
+        public void OnLevelUp(InputValue value)
+        {
+            LevelUpInput(value.isPressed);
+        }
 #endif
 
 
@@ -70,6 +76,11 @@ namespace StarterAssets
         public void MeleeAttackInput(bool newMeleeAttackState)
         {
             meleeAttack = newMeleeAttackState;
+        }
+
+        public void LevelUpInput(bool newLevelUpState)
+        {
+            levelUp = newLevelUpState;
         }
 
         public void SprintInput(bool newSprintState)
